@@ -2,5 +2,9 @@
 <resources>
     <color name="colorPrimary">#03A9F4</color>
     <color name="colorPrimaryDark">#0288D1</color>
-    <color name="colorAccent">#FFFF00</color>
+    <color name="colorAccent">#03A9F4</color>
+    <!-- Primary color for the add and editor activity. -->
+    <color name="editorColorPrimary">#2D3640</color>
+    <!-- Primary dark color for the add and editor activity. -->
+    <color name="editorColorPrimaryDark">#394450</color>
 </resources>

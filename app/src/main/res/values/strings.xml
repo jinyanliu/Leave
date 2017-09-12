@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">Leave</string>
+    <string name="app_name">PlaceBook</string>
+    <!-- Name Field EditText hint for adding a new place in AddandEditorActivity.
+    Used in activity_add_editor.xml -->
+    <string name="hint_name">Name</string>
+    <!-- Category Spinner title in AddandEditorActivity.
+     Used in activity_add_editor.xml -->
+    <string name="category_title">Category:</string>
+    <!-- Specialties Field EditText hint for adding a new place in AddandEditorActivity.
+    Used in activity_add_editor.xml -->
+    <string name="hint_specialties">Specialties</string>
+    <!-- Reservation EditText title in AddandEditorActivity.
+    Used in activity_add_editor.xml -->
+    <string name="reservation_title">Reservation:</string>
+    <!-- Notice Field EditText hint for adding a new place in AddandEditorActivity.
+    Used in activity_add_editor.xml -->
+    <string name="hint_notice">Notice</string>
+
+    <string name="category_spinner_attraction">Attraction</string>
+    <string name="category_spinner_cafe">Café</string>
+    <string name="category_spinner_restaurant">Restaurant</string>
+    <string name="category_spinner_hotel">Hotel</string>
+    <string name="category_spinner_shop">Shop</string>
+    <string name="category_spinner_other">Other</string>
+
 </resources>
