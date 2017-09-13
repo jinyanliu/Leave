@@ -12,10 +12,12 @@
     <!-- Reservation EditText title in AddandEditorActivity.
     Used in activity_add_editor.xml -->
     <string name="reservation_title">Reservation:</string>
-    <!-- Notice Field EditText hint for adding a new place in AddandEditorActivity.
+    <!-- Comments Field EditText hint for adding a new place in AddandEditorActivity.
     Used in activity_add_editor.xml -->
-    <string name="hint_notice">Notice</string>
+    <string name="hint_comments">Comments</string>
 
+    <!-- Category Spinner string array in AddandEditorActivity.
+     Used in setUpSpinner() in AddandEditorActivity. -->
     <string name="category_spinner_attraction">Attraction</string>
     <string name="category_spinner_cafe">Café</string>
     <string name="category_spinner_restaurant">Restaurant</string>

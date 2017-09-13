@@ -25,7 +25,7 @@
             android:padding="@dimen/activity_horizontal_margin"
             android:text="@string/category_title"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorAccent" />
 
         <Spinner
             android:id="@+id/spinner_category"
@@ -58,7 +58,7 @@
             android:padding="@dimen/activity_horizontal_margin"
             android:text="@string/reservation_title"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorAccent" />
 
         <EditText
             android:layout_width="0dp"
@@ -92,14 +92,46 @@
 
     </LinearLayout>
 
-    <!-- Notice field -->
+    <!-- Comments field -->
     <EditText
-        android:id="@+id/et_notice"
+        android:id="@+id/et_comments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_notice"
+        android:hint="@string/hint_comments"
         android:padding="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:textAppearanceMedium" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/iv_facebook_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/facebook_icon" />
+
+        <ImageView
+            android:id="@+id/iv_website_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/website_icon" />
+
+        <ImageView
+            android:id="@+id/iv_location_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/location_icon" />
+
+    </LinearLayout>
 
 </LinearLayout>

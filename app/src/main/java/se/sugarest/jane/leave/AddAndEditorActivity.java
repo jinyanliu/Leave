@@ -25,13 +25,13 @@ public class AddAndEditorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_editor);
 
         mCategorySpinner = (Spinner) findViewById(R.id.spinner_category);
-        setupSpinner();
+        setUpSpinner();
     }
 
     /**
      * Setup the dropdown spinner that allows the user to select the category of a place.
      */
-    private void setupSpinner() {
+    private void setUpSpinner() {
         // Create adapter for spinner. The list options are from the String array it will use
         // the spinner will use the default layout
         ArrayAdapter categorySpinnerAdapter = ArrayAdapter.createFromResource(this,
