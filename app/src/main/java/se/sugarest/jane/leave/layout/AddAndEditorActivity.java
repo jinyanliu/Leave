@@ -1,4 +1,4 @@
-package se.sugarest.jane.leave;
+package se.sugarest.jane.leave.layout;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import se.sugarest.jane.leave.R;
 
 /**
  * Created by jane on 17-9-12.

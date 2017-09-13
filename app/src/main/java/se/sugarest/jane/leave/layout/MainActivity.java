@@ -1,10 +1,12 @@
-package se.sugarest.jane.leave;
+package se.sugarest.jane.leave.layout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import se.sugarest.jane.leave.R;
 
 public class MainActivity extends AppCompatActivity {
 
