@@ -2,11 +2,11 @@
 <resources>
     <!-- These are the options displayed in the category drop-down Spinner -->
     <string-array name="array_category_options">
+        <item>@string/category_spinner_other</item>
         <item>@string/category_spinner_attraction</item>
         <item>@string/category_spinner_cafe</item>
         <item>@string/category_spinner_restaurant</item>
         <item>@string/category_spinner_hotel</item>
         <item>@string/category_spinner_shop</item>
-        <item>@string/category_spinner_other</item>
     </string-array>
 </resources>
