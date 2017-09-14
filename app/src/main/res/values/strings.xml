@@ -5,7 +5,7 @@
     <string name="say_something_today">Say something today...</string>
     <!-- The text on the save button on the main screen.
     Used in activity_main.xml -->
-    <string name="button_text_save_mainscreen">Match Your City</string>
+    <string name="button_text_save_mainscreen">Find Your City</string>
     <!-- Default city name according to the city image is Stockholm, Sweden. Shows at main screen.
      Used in activity_main.xml -->
     <string name="default_text_city_stockholm">Stockholm, Sweden</string>
