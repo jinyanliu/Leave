@@ -34,4 +34,11 @@
     <string name="category_spinner_shop">Shop</string>
     <string name="category_spinner_other">Other</string>
 
+    <!-- Title of editor page action menu save.
+     Used in android:title in menu_editor.xml -->
+    <string name="editor_menu_save">Save</string>
+    <!-- Title of editor page action menu delete.
+    Used in android:title in menu_editor.xml -->
+    <string name="editor_menu_delete">Delete</string>
+
 </resources>

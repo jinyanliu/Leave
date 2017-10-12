@@ -3,6 +3,8 @@ package se.sugarest.jane.leave.layout;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -74,5 +76,32 @@ public class AddAndEditorActivity extends AppCompatActivity {
                 // TODO
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_editor, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_save:
+                // TODO: save the place to database
+                return true;
+            case R.id.action_delete:
+                // TODO: delete the place from database
+                return true;
+            case android.R.id.home:
+                // TODO: check if it is changed
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
