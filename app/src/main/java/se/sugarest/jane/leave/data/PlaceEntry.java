@@ -30,9 +30,10 @@ public class PlaceEntry {
     private String location;
 
     // Constructor used by Room to create PlaceEntries
-    public PlaceEntry(String place, String country, int category, String specialties,
+    public PlaceEntry(int id, String place, String country, int category, String specialties,
                       String reservation, String comments, String facebook, String website,
                       String location) {
+        this.id = id;
         this.place = place;
         this.country = country;
         this.category = category;
