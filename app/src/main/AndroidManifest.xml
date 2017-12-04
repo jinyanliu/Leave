@@ -24,11 +24,5 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.main_activity.MainActivity" />
         </activity>
-
-        <provider
-            android:name=".data.PlaceBookProvider"
-            android:authorities="se.sugarest.jane.leave"
-            android:exported="false" />
     </application>
-
 </manifest>
