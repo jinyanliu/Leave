@@ -1,4 +1,4 @@
-package se.sugarest.jane.leave.layout;
+package se.sugarest.jane.leave.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -100,6 +100,7 @@ public class AddAndEditorActivity extends AppCompatActivity {
                 return true;
             case android.R.id.home:
                 // TODO: check if it is changed
+                finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);

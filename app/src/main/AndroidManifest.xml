@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/footprint_icon_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.MainActivity">
+        <activity android:name=".ui.main_activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".layout.AddAndEditorActivity"
-            android:parentActivityName=".layout.MainActivity"
+            android:name=".ui.AddAndEditorActivity"
+            android:parentActivityName=".ui.main_activity.MainActivity"
             android:theme="@style/AddAndEditorTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".layout.MainActivity" />
+                android:value=".ui.main_activity.MainActivity" />
         </activity>
 
         <provider
