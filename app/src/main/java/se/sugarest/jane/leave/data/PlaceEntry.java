@@ -14,7 +14,8 @@ import static se.sugarest.jane.leave.utilities.Constants.TABLE_NAME;
  * <p>
  * Created by jane on 17-12-4.
  */
-@Entity(tableName = TABLE_NAME, indices = {@Index(value = "placeCountry")})
+@Entity(tableName = TABLE_NAME, indices = {@Index(value = "placeCountry")
+        , @Index(value = {"placeName", "placeCity", "placeCountry"}, unique = true)})
 public class PlaceEntry {
 
     @PrimaryKey(autoGenerate = true)
