@@ -13,14 +13,15 @@ import static se.sugarest.jane.leave.utilities.Constants.TABLE_NAME;
  * <p>
  * Created by jane on 17-12-4.
  */
-@Entity(tableName = TABLE_NAME, indices = {@Index(value = "country")})
+@Entity(tableName = TABLE_NAME, indices = {@Index(value = "placeCountry")})
 public class PlaceEntry {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String place;
-    private String country;
+    private String placeName;
+    private String placeCity;
+    private String placeCountry;
     private int category;
     private String specialties;
     private String reservation;
@@ -30,12 +31,13 @@ public class PlaceEntry {
     private String location;
 
     // Constructor used by Room to create PlaceEntries
-    public PlaceEntry(int id, String place, String country, int category, String specialties,
+    public PlaceEntry(int id, String placeName, String placeCity, String placeCountry, int category, String specialties,
                       String reservation, String comments, String facebook, String website,
                       String location) {
         this.id = id;
-        this.place = place;
-        this.country = country;
+        this.placeName = placeName;
+        this.placeCity = placeCity;
+        this.placeCountry = placeCountry;
         this.category = category;
         this.specialties = specialties;
         this.reservation = reservation;
@@ -49,12 +51,16 @@ public class PlaceEntry {
         return id;
     }
 
-    public String getPlace() {
-        return place;
+    public String getPlaceName() {
+        return placeName;
     }
 
-    public String getCountry() {
-        return country;
+    public String getPlaceCity() {
+        return placeCity;
+    }
+
+    public String getPlaceCountry() {
+        return placeCountry;
     }
 
     public int getCategory() {

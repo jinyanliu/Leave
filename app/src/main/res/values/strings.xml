@@ -1,11 +1,26 @@
 <resources>
     <string name="app_name">PlaceBook</string>
 
-    <!-- Place Name Field EditText hint for adding a new place in AddandEditor Page.-->
+    <!-- Place Name Field EditText hint for adding a new place in detail screen.-->
     <string name="hint_place_name">Place Name</string>
 
-    <!-- Country Name Field EditText hint for adding a new place in AddandEditor Page.-->
+    <!-- City Name Field EditText hint for adding a new place in detail screen.-->
+    <string name="hint_city_name">City Name</string>
+
+    <!-- Country Name Field EditText hint for adding a new place in detail screen.-->
     <string name="hint_country_name">Country Name</string>
+
+    <!-- The comma between city name and country name on main screen and detail screen.-->
+    <string name="comma_between_city_and_country">,</string>
+
+    <!-- The fake place name provided for place_list_item.xml for design reason. -->
+    <string name="tools_text_place_name">Pastéis de Belém</string>
+
+    <!-- The fake place city provided for place_list_item.xml for design reason. -->
+    <string name="tools_text_place_city">Lisbon</string>
+
+    <!-- The fake place country provided for place_list_item.xml for design reason. -->
+    <string name="tools_text_place_country">Portugal</string>
 
     <!-- Category Spinner title in AddandEditorActivity.
      Usedactivity_detail.xml -->

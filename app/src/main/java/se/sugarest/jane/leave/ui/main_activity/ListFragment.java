@@ -4,11 +4,13 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import se.sugarest.jane.leave.R;
+import se.sugarest.jane.leave.data.PlaceEntry;
 import se.sugarest.jane.leave.databinding.FragmentPlacesListBinding;
 
 /**
@@ -16,9 +18,10 @@ import se.sugarest.jane.leave.databinding.FragmentPlacesListBinding;
  * <p>
  * Created by jane on 17-12-4.
  */
-public class ListFragment extends Fragment {
+public class ListFragment extends Fragment implements PlaceAdapter.PlaceAdapterOnClickHandler {
 
     private FragmentPlacesListBinding mBinding;
+    private PlaceAdapter mPlaceAdapter;
 
     // Mandatory empty constructor
     public ListFragment() {
@@ -37,5 +40,17 @@ public class ListFragment extends Fragment {
     }
 
     private void setUpRecyclerViewWithAdapter() {
+        final LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+        mBinding.recyclerViewPlacesList.setLayoutManager(layoutManager);
+        mBinding.recyclerViewPlacesList.setHasFixedSize(true);
+        if (mPlaceAdapter == null) {
+            mPlaceAdapter = new PlaceAdapter(this);
+        }
+        mBinding.recyclerViewPlacesList.setAdapter(mPlaceAdapter);
+    }
+
+    @Override
+    public void onClick(PlaceEntry placeEntry) {
+
     }
 }

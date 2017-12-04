@@ -15,14 +15,37 @@
             android:padding="@dimen/activity_horizontal_margin"
             android:textAppearance="?android:textAppearanceMedium" />
 
-        <!-- Country Name field -->
-        <EditText
-            android:id="@+id/et_place_country"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_country_name"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:orientation="horizontal">
+
+            <!-- City Name field -->
+            <EditText
+                android:id="@+id/et_place_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_city_name"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comma_between_city_and_country" />
+
+            <!-- Country Name field -->
+            <EditText
+                android:id="@+id/et_place_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_country_name"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
 
         <!-- Category field -->
         <LinearLayout

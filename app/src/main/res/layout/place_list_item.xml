@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/place_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tv_place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tool:layout_constraintStart_toStartOf="parent"
+            tool:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/tools_text_place_name" />
+
+        <TextView
+            android:id="@+id/tv_place_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tool:layout_constraintEnd_toStartOf="@+id/comma_between_city_and_country"
+            tool:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/tools_text_place_city" />
+
+        <TextView
+            android:id="@+id/comma_between_city_and_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/comma_between_city_and_country"
+            tool:layout_constraintBaseline_toBaselineOf="@+id/tv_place_city"
+            tool:layout_constraintEnd_toStartOf="@+id/tv_place_country" />
+
+        <TextView
+            android:id="@+id/tv_place_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tool:layout_constraintEnd_toEndOf="parent"
+            tool:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/tools_text_place_country" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
