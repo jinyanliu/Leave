@@ -1,6 +1,7 @@
 package se.sugarest.jane.leave.data;
 
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 import android.arch.persistence.room.Room;
@@ -29,6 +30,23 @@ public class PlaceEntry {
     private String facebook;
     private String website;
     private String location;
+
+    // Constructor used by DetailFragment to put PlaceEntries into Room database
+    @Ignore
+    public PlaceEntry(String placeName, String placeCity, String placeCountry, int category, String specialties,
+                      String reservation, String comments, String facebook, String website,
+                      String location) {
+        this.placeName = placeName;
+        this.placeCity = placeCity;
+        this.placeCountry = placeCountry;
+        this.category = category;
+        this.specialties = specialties;
+        this.reservation = reservation;
+        this.comments = comments;
+        this.facebook = facebook;
+        this.website = website;
+        this.location = location;
+    }
 
     // Constructor used by Room to create PlaceEntries
     public PlaceEntry(int id, String placeName, String placeCity, String placeCountry, int category, String specialties,

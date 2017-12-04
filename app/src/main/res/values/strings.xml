@@ -22,21 +22,19 @@
     <!-- The fake place country provided for place_list_item.xml for design reason. -->
     <string name="tools_text_place_country">Portugal</string>
 
-    <!-- Category Spinner title in AddandEditorActivity.
-     Usedactivity_detail.xml -->
+    <!-- Category Spinner title on detail page. -->
     <string name="category_title">Category:</string>
-    <!-- Specialties Field EditText hint for adding a new place in AddandEditorActivity.
-    Usedactivity_detail.xml -->
+
+    <!-- Specialties Field EditText hint for adding a new place on detail page. -->
     <string name="hint_specialties">Specialties</string>
-    <!-- Reservation EditText title in AddandEditorActivity.
-    Usedactivity_detail.xml -->
+
+    <!-- Reservation EditText title on detail page. -->
     <string name="reservation_title">Reservation:</string>
-    <!-- Comments Field EditText hint for adding a new place in AddandEditorActivity.
-    Usedactivity_detail.xml -->
+
+    <!-- Comments Field EditText hint for adding a new place on detail page. -->
     <string name="hint_comments">Comments</string>
 
-    <!-- Category Spinner string array in AddandEditorActivity.
-     Used in setUpSpinner() in AddandEditorActivity. -->
+    <!-- Category Spinner string array on detail page. -->
     <string name="category_spinner_attraction">Attraction</string>
     <string name="category_spinner_cafe">Café</string>
     <string name="category_spinner_restaurant">Restaurant</string>
@@ -44,11 +42,13 @@
     <string name="category_spinner_shop">Shop</string>
     <string name="category_spinner_other">Other</string>
 
-    <!-- Title of editor page action menu save.
-     Used in android:title in menu_editor.xml -->
+    <!-- Title of editor page action menu save. -->
     <string name="editor_menu_save">Save</string>
-    <!-- Title of editor page action menu delete.
-    Used in android:title in menu_editor.xml -->
+
+    <!-- Title of editor page action menu delete. -->
     <string name="editor_menu_delete">Delete</string>
+
+    <!-- Toast message shows up when user clicks the save button on detail screen without providing place's name, city or country. -->
+    <string name="toast_message_place_name_city_country_cannot_be_empty">Place Name, City and Country cannot be empty !</string>
 
 </resources>
