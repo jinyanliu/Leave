@@ -8,16 +8,16 @@
     <string name="hint_country_name">Country Name</string>
 
     <!-- Category Spinner title in AddandEditorActivity.
-     Used in activity_add_editor.xml -->
+     Usedactivity_detail.xml -->
     <string name="category_title">Category:</string>
     <!-- Specialties Field EditText hint for adding a new place in AddandEditorActivity.
-    Used in activity_add_editor.xml -->
+    Usedactivity_detail.xml -->
     <string name="hint_specialties">Specialties</string>
     <!-- Reservation EditText title in AddandEditorActivity.
-    Used in activity_add_editor.xml -->
+    Usedactivity_detail.xml -->
     <string name="reservation_title">Reservation:</string>
     <!-- Comments Field EditText hint for adding a new place in AddandEditorActivity.
-    Used in activity_add_editor.xml -->
+    Usedactivity_detail.xml -->
     <string name="hint_comments">Comments</string>
 
     <!-- Category Spinner string array in AddandEditorActivity.

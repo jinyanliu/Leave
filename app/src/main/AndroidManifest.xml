@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.AddAndEditorActivity"
+            android:name=".ui.detail_activity.DetailActivity"
             android:parentActivityName=".ui.main_activity.MainActivity"
             android:theme="@style/AddAndEditorTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->

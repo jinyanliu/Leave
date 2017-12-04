@@ -8,7 +8,7 @@ import android.view.View;
 
 import se.sugarest.jane.leave.R;
 import se.sugarest.jane.leave.databinding.ActivityMainBinding;
-import se.sugarest.jane.leave.ui.AddAndEditorActivity;
+import se.sugarest.jane.leave.ui.detail_activity.DetailActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        // Setup FAB to open AddAndEditorActivity
+        // Setup FAB to open DetailActivity
         mBinding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AddAndEditorActivity.class);
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(intent);
             }
         });
