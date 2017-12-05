@@ -151,8 +151,9 @@ public class DetailFragment extends Fragment {
             executors.diskIO().execute(() -> {
                 PlaceDatabase database = PlaceDatabase.getInstance(getActivity().getApplicationContext());
                 database.placeDao().insertPlace(newPlaceEntry);
-                Log.i(LOG_TAG, "New PlaceEntry inserted with: " + newPlaceEntry);
+                Log.i(LOG_TAG, "New PlaceEntry inserted into database with=" + newPlaceEntry);
             });
+            getActivity().finish();
         } else {
             Toast.makeText(getActivity(), getString(R.string.toast_message_place_name_city_country_cannot_be_empty), Toast.LENGTH_SHORT).show();
         }
